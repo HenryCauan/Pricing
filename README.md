@@ -2,7 +2,7 @@
 
 Este é um projeto desenvolvido como parte do desafio [Pricing Component](https://devchallenges.io/challenges/XaEa7eGBvQ8tiyf7kNcb) do site **DevChallenges.io**. A proposta é criar uma **tabela de preços responsiva**, utilizando **Next.js** e **TailwindCSS** como principais tecnologias.
 
-![Screenshot do projeto](public/preview.png)
+![Image](https://github.com/user-attachments/assets/061216f8-c2b3-408c-989c-8a05f9fcd211)
 
 ## 🚀 Tecnologias utilizadas
 
