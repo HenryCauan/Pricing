@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --background: #ffffff;
@@ -20,7 +21,91 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, clamp(12rem, 16vw, 18rem));
+  justify-content: center;
+  align-items: center;
+  height: 75%; /* Ocupa a altura total do container pai */
+  overflow: hidden;
+  grid-template-areas: "one two three four five";
+}
+
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+@media (max-width: 1024px) {
+  #grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 24vw);
+    height: 70%; /* Ocupa a altura total do container pai */
+    overflow: hidden;
+    grid-template-areas: "one three four five";
+  }
+  #two {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 33vw);
+    height: 70%; /* Ocupa a altura total do container pai */
+    overflow: hidden;
+    grid-template-areas: "one five four";
+  }
+  #two {
+    display: none;
+  }
+  #three {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  #grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 44vw);
+    height: 70%; /* Ocupa a altura total do container pai */
+    overflow: hidden;
+    grid-template-areas: "one five";
+  }
+  #two {
+    display: none;
+  }
+  #three {
+    display: none;
+  }
+  #four {
+    display: none;
+  }
 }
