@@ -4,14 +4,14 @@ import "./globals.css";
 export const metadata = {
   title: "Pricing Table",
   description: "",
-  icons: {
-    icon: "/favicon.ico",
-  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body
       >
         {children}
