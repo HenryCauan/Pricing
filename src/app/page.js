@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="flex gap-2 justify-center w-full font-bold text-[color:#263FA9] ">Get Started <i className="ri-arrow-right-line"></i></div>
           </div>
-          <div className="flex flex-col bg-[color:#121826] text-white rounded-2xl mt-5" id="four">
+          <div className="flex flex-col bg-[color:#121826] text-white rounded-2xl mt-2" id="four">
             <div className="flex flex-col gap-2 w-full h-[11rem] justify-center items-center mb-0">
               <span className="text-white bg-[color:#263FA9] rounded-3xl px-3 font-semibold">Popular</span>
               <span className="text-6xl font-bold">$99</span>
